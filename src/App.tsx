@@ -1,15 +1,16 @@
 import { Fragment } from "react";
+import { Router } from "@reach/router";
 import { Header } from "components/Header";
-import React from "react";
 import { GlobalStyles } from "styles/GlobalStyles";
+import { Principal } from "views/Principal";
 function App() {
   return (
     <Fragment>
       <GlobalStyles />
-      <div className="App">
-        <Header />
-        <h1>It Works!</h1>
-      </div>
+      <Header />
+      <Router>
+        <Principal path="/" />
+      </Router>
     </Fragment>
   );
 }
