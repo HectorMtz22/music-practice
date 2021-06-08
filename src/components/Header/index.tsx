@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <HeaderLayout>
       <MdDehaze size={SIZE} />
-      <Title>Music Practice!</Title>
+      <Title to="/">Music Practice!</Title>
     </HeaderLayout>
   );
 };
