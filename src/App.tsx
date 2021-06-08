@@ -4,7 +4,7 @@ import { Header } from "components/Header";
 import { GlobalStyles } from "styles/GlobalStyles";
 import { Principal } from "views/Principal";
 import { GlobalVariables } from "styles/GlobalVariables";
-import { Course } from "components/Course";
+import { ListOfCourses } from "views/ListOfCourses";
 function App() {
   return (
     <Fragment>
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Router>
         <Principal path="/" />
-        <Course path="/course" />
+        <ListOfCourses path="/course" />
       </Router>
     </Fragment>
   );

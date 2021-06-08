@@ -7,6 +7,11 @@ export const HeaderLayout = styled.header`
   display: grid;
   grid-template-columns: 50px 1fr;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
 `;
 
 export const Title = styled.h1`
