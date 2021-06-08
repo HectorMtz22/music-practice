@@ -1,6 +1,10 @@
 import styled from "styled-components";
+import { Link } from "@reach/router";
 
-export const Wrapper = styled.main`
+export const Wrapper = styled(Link)`
+  color: #555;
+  display: block;
+  text-decoration: none;
   margin: 0.5rem;
   padding: 0.8rem;
   border-radius: 10px;

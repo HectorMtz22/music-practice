@@ -5,6 +5,7 @@ import { GlobalStyles } from "styles/GlobalStyles";
 import { Principal } from "views/Principal";
 import { GlobalVariables } from "styles/GlobalVariables";
 import { ListOfCourses } from "views/ListOfCourses";
+import { Detail } from "views/Detail";
 function App() {
   return (
     <Fragment>
@@ -13,7 +14,8 @@ function App() {
       <Header />
       <Router>
         <Principal path="/" />
-        <ListOfCourses path="/course" />
+        <ListOfCourses path="/courses" />
+        <Detail path="/course/:id" />
       </Router>
     </Fragment>
   );
