@@ -6,7 +6,7 @@ export const Course = ({ id, title, description, img, price }: CourseModel) => {
   // const aver = useContext(Context);
   // console.log(aver);
   return (
-    <Wrapper>
+    <Wrapper to={"/course/" + id}>
       <Title>{title}</Title>
       <ImgWrapper>
         <Description>{description}</Description>
